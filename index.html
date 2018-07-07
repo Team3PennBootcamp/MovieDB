@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MovieDB</title>
+
+  <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href ="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href ="stylehome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Add Navigation Here -->
+
+  <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
+    <div class = "logo"><img src="assets/images/video.png"></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="moviepage.html">Movie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form method="post" action="moviepage.html" class="form-inline my-2 my-lg-0" id="form">
+        <input id="input" name="redirect" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Add Image Slides -->
+  <div class = "slider">
+    <ul class = "slides">
+      <li>
+        <img src="assets/images/movie1.jpg">
+      </li>
+      <li>
+        <img src = "assets/images/movie2.jpg">
+      </li>
+      <li>
+        <img src = "assets/images/movie3.jpg">
+      </li>
+    </ul>
+  </div>
+
+  <!-- End Slider -->
+
+  <!-- Start Banner Wrapper -->
+
+  <div id = "banner-wrapper">
+    <h1>Welcome To Movie World</h1>
+    <div class = "one-half">
+      <h3></h3>
+      <!-- <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> -->
+    </div>
+    <div class = "one-half">
+      <h3></h3>
+      <!-- <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> -->
+    </div>
+  </div>
+  <!-- End Banner Wrapper -->
+  <div class = "clearfix"></div>
+  <!-- Start Parallax Section -->
+  <section class = "parallax-1">
+    <h1 id="review">Reddit Reviews</h1>
+    <div id="reddit-reviews" class = "parallax-inner">
+      <!-- <section class = "one-third"> -->
+        <!-- <h3></h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+      </section>
+      <section class = "one-third">
+        <h3></h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+      </section>
+      <section class = "one-third">
+        <h3></h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>   -->
+      <!-- </section> -->
+
+    </div>
+  </section>
+
+  <!-- End Parallax Section -->
+  <div class="clearfix"></div>
+  <!-- Start Banner Wrapper -->
+  <body>
+    <!-- <form id="form">
+      <input type="search" placeholder="Find your favorite movies..." name="search" id="search">
+      <button type="submit" id="submit_button" value="search">Search</button>
+    </form>
+<br /> -->
+
+    <div id="nowPlaying">
+      <h2>Now Playing</h2>
+    </div>
+
+    <div id="mostPopular">
+      <h2>Most Popular</h2>
+    </div>
+
+    <!-- <script src="apikey/script.js"></script>
+    <script src="ajax/search.js"></script> -->
+    <script src="nowplaying.js"></script>
+    <script src="mostpopular.js"></script>
+    <script src="reddit.js"></script>
+
+
+  <!-- End Banner Wrapper -->
+  <div class="clearfix"></div>
+  <footer>
+    <p>&copy; Team 3 2018</p>
+  </footer>
+
+  <script type = "text/javascript">
+    $(document).ready(function() {
+      $('.slider').slider({full_width: true});
+    });
+  </script>
+
+  <script type = "text/javascript">
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+    });
+  </script>
+
+  <script src="assets/ajax/search.js"></script>
+
+  <script type="text/javascript">
+  const form = document.getElementById('form');
+  let input = document.getElementById('input');
+
+  form.addEventListener('submit', () => {
+    console.log(input.value);
+    value = input.value;
+  });
+
+  AJAXRequest();
+  </script>
+</body>
+</html>
